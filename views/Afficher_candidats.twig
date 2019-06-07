@@ -1,0 +1,37 @@
+<h3>Liste des candidats</h3>
+<br><br>
+{% if liste is not empty %}
+    <table border="1">
+
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Poste souhaité</th>
+            <th>date d'inscription</th>
+            <th></th>
+
+        </tr>
+
+        {% for c in liste %}
+            <tr>
+
+                <td>{{ c.Nom }}</td>
+                <td>{{ c.Prenom }}</td>
+                <td>{{ c.Poste }}</td>
+                <td>{{ c.Date_inscription }}</td>
+
+                <form action="profil/{{ c._id }}" method="get">
+                    <td><button type="submit" class="btn btn-primary" >Details</button></td>
+                </form>
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+{% else %}
+
+    Il n'ya aucun candidat
+
+{% endif %}
+

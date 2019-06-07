@@ -1,0 +1,24 @@
+
+<h3>Ajouter Stagiaire</h3>
+<form action="/candidature" method="POST" >
+
+    <label>Nom : </label>
+    <input type="text" name="Nom"><br><br>
+    <label>Prenom : </label>
+    <input type="text" name="Prenom"><br><br>
+    <label>Email : </label>
+    <input type="text" name="Email"><br><br>
+    <label>Numero de telephone : </label>
+    <input type="Number" name="Numero"><br><br>
+    <label>Poste souhaité :</label>
+    <select name="Poste">
+        <option name="Poste" value="Stage">Stage</option>
+        <option name="Poste" value="StagePFE">StagePFE</option>
+    </select><br><br>
+    <input type='file' name='CV'><br><br>
+    <label>Message</label>
+    <textarea name="Message"></textarea><br><br>
+    <button type="submit">Ajouter</button>
+
+
+</form>
