@@ -18,7 +18,7 @@
     "mongoose": "^5.5.10",
     "morgan": "~1.9.1",
     "node-sessionstorage": "^1.0.0",
-    "pug": "2.0.0-beta11",
+    "pug": "3.0.1",
     "socket.io": "^2.2.0",
     "twig": "^1.13.3",
     "validator": "^10.11.0"
